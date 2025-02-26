@@ -14,4 +14,4 @@ OpenWeather API – Fetches weather data
 Plain CSS – Custom styling for a clean UI
 
 ## 📸 Preview
-![Weather App Screenshot](public/ScreenShot.png)
+![Weather App Screenshot](public/Updated_ss.png)
