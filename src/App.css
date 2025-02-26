@@ -1,0 +1,94 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+  color: white;
+  cursor: default;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/sunnybg.jpg");
+  background-size: cover;  /*Ensures it covers the full screen */
+  background-position: center; /*Centers the image */
+  height: 100vh; /*Makes the background cover the viewport*/
+
+}
+.container{
+  padding: 10px;
+  display: grid;
+  place-self: center;
+  place-items: center;
+  gap: 10px;
+
+  /* max-width: 400px; */
+  border-radius: 10px;
+  background-color: rgb(52, 51, 51);
+  box-shadow:3px 3px 10px rgba(0, 0, 0, 1);
+  font-size: 2rem;
+
+}
+.input_box{
+  gap: 10px; 
+  display: flex;
+}
+.input_box button{
+  cursor: pointer;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.input_box input{
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px; 
+  color: black;
+  cursor: text;
+}
+
+.type{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.type img{
+  max-width: 50px;
+}
+
+.temperature{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap:10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wind_and_humidity {
+  display: flex;
+  justify-content: space-between; /* Space out both elements */
+  gap:20px;
+  
+}
+
+.wind_and_humidity img{
+  max-width: 35px;
+}
+
+.wind, .humidity {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.humidity span, .wind span{
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.temperature img{
+  max-width: 35px;
+}
