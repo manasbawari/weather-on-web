@@ -10,6 +10,7 @@ import wind_icon from './assets/wind.png';
 import humidity_icon from './assets/humidity.png';
 import haze_icon from './assets/fog.png';
 import snow_icon from './assets/snowflake.png';
+import map_icon from './assets/map.png';
 
 function App() {
   const [city, setCity] = useState("");
@@ -85,16 +86,17 @@ function App() {
       </div>
 
       <div className='city_name'>
+      <img src={map_icon} alt='icon'></img>
         {weatherinfo.cityname}, {weatherinfo.country}
       </div>
       <div className='type'>
-        {weatherinfo.type}
         <img src={icon(weatherinfo.icon_id)} alt='icon'></img>
       </div>
       <div className="temperature">
-        {weatherinfo.temperature} °C 
+        <span>{weatherinfo.temperature}</span>°C 
         <img src = {thermometer} alt='thermometer'></img>
       </div>
+      <hr></hr>
       <div className="wind_and_humidity">
         <div className="wind">
           <img src={wind_icon} alt='wind'></img>
